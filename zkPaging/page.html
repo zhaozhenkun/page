@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="zkPaging.css">
+    <script src="zkPaging.js"></script>
+</head>
+<body>
+    <div class="pagingElement">
+    </div>
+    <div class="pagingElement2">
+    </div>
+</body>
+<script>
+
+ document.querySelectorAll('.pagingElement')[0].zkPaging({
+    pages: 50,
+    pageShowNum:10,
+    pageNum: 5,
+    // 是否显示分页1页切换按钮
+    pageOneShow: false,
+    pageMuchShow: false,
+    pageHEShow: false,
+    pageSizeShow: false,
+    pagesNumShow: false,
+    homePageText: '首页',
+    endPageText: '尾页',
+    prevMuchText: '<<',
+    nextMuchText: '>>',
+    prevOne: '<',
+    nextOne: '>',
+    callback: function (pageNum,pageSize) {
+        console.log(pageNum);
+        console.log(pageSize);
+    }
+ })
+ document.querySelectorAll('.pagingElement2')[0].zkPaging({
+    pages: 50,
+    pageShowNum:10,
+    pageNum: 5,
+    // 是否显示分页1页切换按钮
+    pageOneShow: true,
+    pageMuchShow: true,
+    pageHEShow: true,
+    pageSizeShow: true,
+    pageSizeObj:[
+        {'value': 10, 'text': '10条/页', 'selected': true},
+        {'value': 20, 'text': '20条/页'},
+        {'value': 30, 'text': '30条/页'},
+        {'value': 40, 'text': '40条/页'}
+    ],
+    homePageText: '首页',
+    endPageText: '尾页',
+    pageMuchNum: 15,
+    prevMuchText: '<<',
+    nextMuchText: '>>',
+    prevOne: '<',
+    nextOne: '>',
+    pagesNumShow: true,
+    callback: function (pageNum,pageSize) {
+        console.log(pageNum);
+        console.log(pageSize);
+
+    }
+ })
+//  document.querySelector('#aaa').onclick = function () {
+//     document.querySelectorAll('.pagingElement')[0].zkPaging('setPage','5','8')
+//  }
+</script>
+</html>

@@ -1,0 +1,74 @@
+.pageSelected {
+    color: red;
+}
+.zkPages {
+    margin-top: 20px;
+}
+.zkPages div {
+    display: inline-block;
+    cursor: pointer;
+}
+.zkPages .prevOne,.zkPages .nextOne,.zkPages .prevMuch,.zkPages .nextMuch,.zkPages .homePage,.zkPages .endPage {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    padding:  0 10px;
+    /* width: 30px; */
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+.zkPages .page div {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    /* width: 30px; */
+    padding:  0 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+.zkPages .pageSizeSelectBox {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    /* padding: 0 10px; */
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.zkPages .pageSizeSelectBox .pageSizeUl{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    border: 1px solid #ddd;
+    width: 99px;
+    border-radius: 4px;
+
+}
+.zkPages .pageSizeSelectBox .pageSizeUl .pageSizeLi{
+    cursor: pointer;
+}
+.zkPages .pagesNumText {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 5px;
+}
